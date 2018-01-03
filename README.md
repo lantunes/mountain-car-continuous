@@ -17,8 +17,8 @@ summed to yield a scalar, of which the exponential is used as the value for sigm
 - the class of interest is rl.reinforce.agent.TFNeuralNetStochasticPolicyAgent
 - the optimization is done in minibatches, and the batches are shuffled
 
-- the plot below represents the average reward after 10 trials:
+- the plot below represents the average total reward for each episode over 10 trials:
 
 ![Avg. Reward](https://raw.githubusercontent.com/lantunes/mountain-car-continuous/master/util/gaussian-policy-gradient-10-runs.png)
 
-(MountainCarContinuous-v0 defines "solving" as getting average reward of 90.0 over 100 consecutive trials.) <!-- .element height="10%" width="10%" -->
+(MountainCarContinuous-v0 defines "solving" as getting average reward of 90.0 over 100 consecutive trials.) <!-- .element style="max-width:50%" -->
