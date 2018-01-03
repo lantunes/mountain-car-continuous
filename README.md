@@ -21,4 +21,4 @@ summed to yield a scalar, of which the exponential is used as the value for sigm
 
 ![Avg. Reward](https://raw.githubusercontent.com/lantunes/mountain-car-continuous/master/util/gaussian-policy-gradient-10-runs.png)
 
-(MountainCarContinuous-v0 defines "solving" as getting average reward of 90.0 over 100 consecutive trials.) <!-- .element height="50%" width="50%" -->
+(MountainCarContinuous-v0 defines "solving" as getting average reward of 90.0 over 100 consecutive trials.) <!-- .element height="25%" width="25%" -->
