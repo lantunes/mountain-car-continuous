@@ -19,6 +19,4 @@ summed to yield a scalar, of which the exponential is used as the value for sigm
 
 - the plot below represents the average total reward for each episode over 10 trials:
 
-![Avg. Reward](https://raw.githubusercontent.com/lantunes/mountain-car-continuous/master/util/gaussian-policy-gradient-10-runs.png)
-
-(MountainCarContinuous-v0 defines "solving" as getting average reward of 90.0 over 100 consecutive trials.) <!-- .element style="max-width:50%" -->
+<img src="https://raw.githubusercontent.com/lantunes/mountain-car-continuous/master/util/gaussian-policy-gradient-10-runs.png" width="50%"/>
