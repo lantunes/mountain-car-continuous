@@ -11,11 +11,11 @@ REINFORCE with Stochastic Policy Gradient:
 - located in the rl.reinforce module
 - uses a Gaussian Policy Gradient
 - mu and sigma are both learned (sigma does not depend on the state, while mu does)
-- the input features for mu are learned using a linear layer of neurons given the raw state
+- the input features for mu are learned using an MLP with two tanh layers of 128 neurons, given the raw state
 - a vector of parameters is defined for sigma, which are adjusted using the Gaussian Policy Gradient, and are finally 
 summed to yield a scalar, of which the exponential is used as the value for sigma (the standard deviation) 
 - the optimization is done in minibatches, and the batches are shuffled
-- the class of interest is rl.reinforce.agent.TFNeuralNetStochasticPolicyAgent
+- the class of interest is rl.reinforce.agent.MLPStochasticPolicyAgent
 - the entry point is the simulator.py script in the rl.reinforce module
 
 - the plot below represents the average total reward for each episode over 10 trials:

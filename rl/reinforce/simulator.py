@@ -3,17 +3,21 @@ import gym
 from rl.reinforce.agent import *
 
 # MountainCarContinuous-v0 defines "solving" as getting an average reward of 90.0 over 100 consecutive trials.
-env_name = 'MountainCarContinuous-v0'
-env = gym.make(env_name)
+env = gym.envs.make("MountainCarContinuous-v0")
 
 state_dim = env.observation_space.shape[0]
-num_actions = env.action_space
 
 MAX_EPISODES = 200
 MAX_STEPS = 1000
 
-agent = TFNeuralNetStochasticPolicyAgent(env, num_input=state_dim, init_learning_rate=5e-5, min_learning_rate=1e-10,
-                                         learning_rate_N_max=2000, shuffle=True, batch_size=24, sigma=None)
+# agent = MLPStochasticPolicyAgent(env, num_input=state_dim, init_learning_rate=5e-5, min_learning_rate=1e-10,
+#                                  learning_rate_N_max=2000, shuffle=True, batch_size=24, sigma=None)
+
+# agent = TFRecurrentStochasticPolicyAgent(env, num_input=1, init_learning_rate=5e-5, min_learning_rate=1e-10,
+#                                          learning_rate_N_max=2000, shuffle=True, batch_size=24, sigma=None)
+
+agent = TFRecurrentStochasticPolicyAgent2(env, num_input=1, init_learning_rate=5e-5, min_learning_rate=1e-10,
+                                         learning_rate_N_max=2000, shuffle=True, batch_size=1)
 
 # render an animation of each step in an episode
 render = False
